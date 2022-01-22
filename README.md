@@ -1,5 +1,5 @@
 # A simple Calculator written in C#
-l
+
 This is a program for a coding assessment.
 It is esentially a simple calculator with: 
 a. an add method 
