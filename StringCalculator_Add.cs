@@ -34,7 +34,15 @@ namespace StringCal
 		  var result=_calculator.Add(numbers);
 		  Assert.Equal(expectedResult,result);
 		} 
-	
+	/* Allow the Add method handle an unknown amount of numbers */
+		[Theory]
+		[InlineData("1,2,3",6)]
+		[InlineData("2,3,4",9)]
+	  public void ReturnsSumGivenStringWithThreeCommaSeparatedNumbers(string numbers,int expectedResult)
+		{
+		  var result=_calculator.Add(numbers);
+		  Assert.Equal(expectedResult,result);
+		} 
 
 	}
  }
