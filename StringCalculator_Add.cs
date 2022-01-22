@@ -23,7 +23,17 @@ namespace StringCal
 		  var result=_calculator.Add(numbers);
 		  Assert.Equal(expectedResult,result);
 		}
-
+		}
+	/*Method to return sum of 1 or 2 numbers */	
+		[Theory]
+		[InlineData("1,2",3)]
+		[InlineData("2,3",5)]
+	  public void ReturnsSumGivenStringWithTwoCommaSeparatedNumbers(string numbers,int expectedResult)
+		{
+		  var calculator=new StringCalculator();
+		  var result=_calculator.Add(numbers);
+		  Assert.Equal(expectedResult,result);
+		} 
 	
 
 	}
