@@ -2,7 +2,7 @@
 
 This is a program for a coding assessment.
 It is esentially a simple calculator with: 
-a. an add method 
+#a.# an add method 
 b. an add method that handles an unknown amount of numbers
 c. an add method that handles new lines between numbers
 d. a method that supports different delmiters
